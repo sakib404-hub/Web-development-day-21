@@ -13,7 +13,7 @@ function minNumber(numbers) {
 let cheap = minNumber(prices);
 console.log(`Minimum is : ${cheap}`);
 console.log(`----------------------------------------`);
-
+console.log(`Cheapest Phones from the bellow Mobile Phones`);
 const mobiles = [
   { name: "Samsung", price: 20000, camera: "12MP", color: "black" },
   { name: "Xiomi", price: 18000, camera: "12MP", color: "black" },
@@ -36,3 +36,18 @@ function getChepest(chepestPhone) {
 let cheapest = getChepest(mobiles);
 console.log(cheapest);
 // console.log(`Chepest Phone is : ${cheapest}`); why its giving me object and object ?
+
+console.log(`----------------------------------------`);
+console.log(`Most valueable Phone from the bellow Mobile Phones`);
+
+function mostValuable(phones) {
+  let maximum = phones[0];
+  for (let phone of phones) {
+    if (maximum.price < phone.price) {
+      maximum = phone;
+    }
+  }
+  return maximum;
+}
+let max = mostValuable(mobiles);
+console.log(max);
