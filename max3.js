@@ -22,3 +22,6 @@ function maxOfThree(numberOne, numberTwo, numberThree) {
 
 let result = maxOfThree(47, 90, 99);
 console.log(`Maximum number among them is ${result}`);
+
+let max = Math.max(14, 89, 97, 100, 1, 3, 4, 5, 7, 9);
+console.log(`Maximum number among them is : ${max}`);
